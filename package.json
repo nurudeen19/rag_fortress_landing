@@ -1,0 +1,27 @@
+{
+  "name": "rag-fortress-landing",
+  "version": "1.0.0",
+  "description": "Landing page for RAG Fortress - a flexible, secure, vendor-agnostic knowledge platform",
+  "main": "index.html",
+  "scripts": {
+    "dev": "python -m http.server 8000",
+    "build": "echo 'No build step needed - static site'",
+    "deploy": "git push origin main"
+  },
+  "keywords": [
+    "rag",
+    "knowledge-base",
+    "llm",
+    "ai",
+    "vector-database",
+    "open-source",
+    "retrieval-augmented-generation"
+  ],
+  "author": "RAG Fortress Contributors",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/nurudeen19/rag-fortress-landing.git"
+  },
+  "homepage": "https://nurudeen19.github.io/rag-fortress-landing"
+}
