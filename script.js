@@ -42,6 +42,44 @@ function copyCode() {
     });
 }
 
+// Copy Backend Code
+function copyBackendCode() {
+    const codeContent = document.getElementById('backend-code-content').textContent;
+    const copyBtn = document.getElementById('copy-backend-btn');
+    
+    navigator.clipboard.writeText(codeContent).then(() => {
+        const originalText = copyBtn.textContent;
+        copyBtn.textContent = '✓ Copied!';
+        copyBtn.classList.add('bg-green-500');
+        
+        setTimeout(() => {
+            copyBtn.textContent = originalText;
+            copyBtn.classList.remove('bg-green-500');
+        }, 2000);
+    }).catch(err => {
+        console.error('Failed to copy:', err);
+    });
+}
+
+// Copy Frontend Code
+function copyFrontendCode() {
+    const codeContent = document.getElementById('frontend-code-content').textContent;
+    const copyBtn = document.getElementById('copy-frontend-btn');
+    
+    navigator.clipboard.writeText(codeContent).then(() => {
+        const originalText = copyBtn.textContent;
+        copyBtn.textContent = '✓ Copied!';
+        copyBtn.classList.add('bg-green-500');
+        
+        setTimeout(() => {
+            copyBtn.textContent = originalText;
+            copyBtn.classList.remove('bg-green-500');
+        }, 2000);
+    }).catch(err => {
+        console.error('Failed to copy:', err);
+    });
+}
+
 // Smooth scroll for anchor links
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function (e) {
@@ -94,11 +132,22 @@ const observer = new IntersectionObserver((entries) => {
 document.addEventListener('DOMContentLoaded', () => {
     const animateElements = document.querySelectorAll('.diff-card, .use-case-card, .step-card, .feature-item');
     
-    animateElements.forEach(el => {
+    animateElements.forEach((el, index) => {
         el.style.opacity = '0';
         el.style.transform = 'translateY(30px)';
-        el.style.transition = 'opacity 0.6s ease-out, transform 0.6s ease-out';
+        el.style.transition = `opacity 0.6s ease-out ${index * 0.1}s, transform 0.6s ease-out ${index * 0.1}s`;
         observer.observe(el);
+    });
+    
+    // Add hover effect to cards
+    const cards = document.querySelectorAll('.diff-card, .use-case-card');
+    cards.forEach(card => {
+        card.addEventListener('mouseenter', function() {
+            this.style.transform = 'translateY(-12px) scale(1.02)';
+        });
+        card.addEventListener('mouseleave', function() {
+            this.style.transform = 'translateY(0) scale(1)';
+        });
     });
 });
 
