@@ -5,13 +5,13 @@ This is the official landing page for **[RAG Fortress](https://github.com/nurude
 ## About
 
 This landing page showcases RAG Fortress and directs users to:
-- **Live Demo**: https://rag-fortress.vercel.app/
+- **Live Demo**: https://rag-fortress.nurustech.com
 - **GitHub Repository**: https://github.com/nurudeen19/rag-fortress
 - **Quick Start Guide**: Full installation and setup instructions on the page
 
 ## Quick Links
 
-- [Live Demo](https://rag-fortress.vercel.app/) - Try the full application
+- [Live Demo](https://rag-fortress.nurustech.com) - Try the full application
 - [Main Repository](https://github.com/nurudeen19/rag-fortress) - Source code and documentation
 - [GitHub Discussions](https://github.com/nurudeen19/rag-fortress/discussions) - Community support
 - [Issue Tracker](https://github.com/nurudeen19/rag-fortress/issues) - Report bugs
