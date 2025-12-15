@@ -3,20 +3,79 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="RAG Fortress - A flexible, secure, vendor-agnostic knowledge platform. Open source RAG system with support for multiple LLMs, vector stores, and custom security layers.">
-    <meta name="keywords" content="RAG, knowledge base, LLM, AI, vector database, open source, retrieval augmented generation">
-    <meta name="author" content="RAG Fortress">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     
-    <!-- Open Graph / Social Media -->
+    <!-- Primary Meta Tags -->
+    <meta name="title" content="RAG Fortress - Flexible, Secure, Vendor-Agnostic Knowledge Platform">
+    <meta name="description" content="RAG Fortress is a flexible, secure, vendor-agnostic knowledge platform. An open source RAG system with support for multiple LLMs, vector stores, and custom security layers for teams.">
+    <meta name="keywords" content="RAG, Retrieval Augmented Generation, knowledge base, LLM, AI, vector database, open source, document intelligence, knowledge management, enterprise AI">
+    <meta name="author" content="RAG Fortress">
+    <meta name="theme-color" content="#0284c7">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    
+    <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
+    <meta property="og:url" content="https://fortress.nurustech.com">
     <meta property="og:title" content="RAG Fortress - Flexible, Secure Knowledge Platform">
-    <meta property="og:description" content="Open source RAG system with support for multiple LLMs, vector stores, and custom security layers.">
-    <meta property="og:url" content="https://ragfortress.com">
+    <meta property="og:description" content="An open source, flexible RAG system with support for multiple LLMs, vector stores, and enterprise security. Build your knowledge platform without vendor lock-in.">
+    <meta property="og:image" content="https://fortress.nurustech.com/img/logo.png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:site_name" content="RAG Fortress">
+    <meta property="og:locale" content="en_US">
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://fortress.nurustech.com">
+    <meta property="twitter:title" content="RAG Fortress - Flexible, Secure Knowledge Platform">
+    <meta property="twitter:description" content="Open source RAG system with multiple LLMs, vector stores, and enterprise security. Deploy without vendor lock-in.">
+    <meta property="twitter:image" content="https://fortress.nurustech.com/img/logo.png">
+    <meta property="twitter:creator" content="@nurudeen19">
+    
+    <!-- Canonical URL -->
+    <meta rel="canonical" href="https://fortress.nurustech.com">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="img/logo.png">
+    <link rel="apple-touch-icon" href="img/logo.png">
+    
+    <!-- Structured Data (Schema.org) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebApplication",
+      "name": "RAG Fortress",
+      "description": "A flexible, secure, vendor-agnostic knowledge platform. Open source RAG system with support for multiple LLMs and vector stores.",
+      "url": "https://fortress.nurustech.com",
+      "applicationCategory": "BusinessApplication",
+      "screenshot": "https://fortress.nurustech.com/img/logo.png",
+      "author": {
+        "@type": "Organization",
+        "name": "RAG Fortress",
+        "url": "https://github.com/nurudeen19/rag-fortress"
+      },
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "USD"
+      }
+    }
+    </script>
     
     <title>RAG Fortress - Flexible, Secure, Vendor-Agnostic Knowledge Platform</title>
     
     <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
+        <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-4TTDJC2VSJ"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-4TTDJC2VSJ');
+    </script>
     
     <!-- Custom Tailwind Config -->
     <script>
@@ -66,9 +125,10 @@
     <nav class="fixed top-0 w-full bg-white/95 backdrop-blur-md border-b border-gray-200 z-50 shadow-sm">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex justify-between items-center h-16 md:h-18">
-                <div class="flex items-center">
+                <div class="flex items-center gap-3">
+                    <img src="img/logo.png" alt="RAG Fortress Logo" class="h-10 w-10" loading="lazy">
                     <span class="text-2xl font-bold bg-gradient-to-r from-primary-500 to-secondary-500 bg-clip-text text-transparent">
-                        🏰 RAG Fortress
+                        RAG Fortress
                     </span>
                 </div>
                 <div class="hidden md:flex items-center space-x-8">
@@ -76,7 +136,7 @@
                     <a href="#use-cases" class="text-gray-700 hover:text-primary-500 transition">Use Cases</a>
                     <a href="#quick-start" class="text-gray-700 hover:text-primary-500 transition">Quick Start</a>
                     <a href="https://github.com/nurudeen19/rag-fortress" target="_blank" class="text-gray-700 hover:text-primary-500 transition">GitHub</a>
-                    <a href="https://rag-fortress.vercel.app/" target="_blank" class="btn-primary">Try Demo</a>
+                    <a href="https://rag-fortress.nurustech.com/" target="_blank" class="btn-primary">Try Demo</a>
                 </div>
                 <button id="mobile-menu-btn" class="md:hidden text-gray-700">
                     <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -92,7 +152,7 @@
                 <a href="#use-cases" class="block text-gray-700 hover:text-primary-500">Use Cases</a>
                 <a href="#quick-start" class="block text-gray-700 hover:text-primary-500">Quick Start</a>
                 <a href="https://github.com/nurudeen19/rag-fortress" target="_blank" class="block text-gray-700 hover:text-primary-500">GitHub</a>
-                <a href="https://rag-fortress.vercel.app/" target="_blank" class="block btn-primary text-center">Try Demo</a>
+                <a href="https://rag-fortress.nurustech.com/" target="_blank" class="block btn-primary text-center">Try Demo</a>
             </div>
         </div>
     </nav>
@@ -448,7 +508,7 @@
                                 <span class="text-white font-semibold text-sm">💬 RAG Fortress Chat</span>
                             </div>
                         </div>
-                        <img src="img/chat.png" alt="RAG Fortress Chat Interface" class="w-full h-auto">
+                        <img src="img/chat.png" alt="RAG Fortress Chat Interface" class="w-full h-auto" loading="lazy">
                         <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/60 to-transparent p-8">
                             <p class="text-white text-lg font-semibold mb-2">Intelligent Conversations with Your Documents</p>
                             <p class="text-white/90 text-sm">Get context-aware answers powered by your knowledge base</p>
@@ -456,7 +516,7 @@
                     </div>
                 </div>
                 <div class="text-center mt-8">
-                    <a href="https://rag-fortress.vercel.app/" target="_blank" class="inline-flex items-center gap-2 bg-gradient-to-r from-primary-600 to-accent-600 text-white px-8 py-4 rounded-xl font-bold text-lg hover:shadow-2xl hover:shadow-primary-500/30 transition-all duration-300 hover:-translate-y-1 hover:scale-105">
+                    <a href="https://rag-fortress.nurustech.com/" target="_blank" class="inline-flex items-center gap-2 bg-gradient-to-r from-primary-600 to-accent-600 text-white px-8 py-4 rounded-xl font-bold text-lg hover:shadow-2xl hover:shadow-primary-500/30 transition-all duration-300 hover:-translate-y-1 hover:scale-105">
                         <span>Try Live Demo</span>
                         <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6"></path>
@@ -540,42 +600,42 @@
                 <h3 class="text-2xl md:text-3xl font-bold text-gray-900 mb-8 text-center">Complete Platform Overview</h3>
                 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
                     <div class="screenshot-card">
-                        <img src="img/admin_dashboard.png" alt="Admin Dashboard" class="screenshot-img">
+                        <img src="img/admin_dashboard.png" alt="Admin Dashboard" class="screenshot-img" loading="lazy">
                         <div class="screenshot-caption">
                             <h4 class="font-bold text-gray-900">Admin Dashboard</h4>
                             <p class="text-sm text-gray-600">Activity monitoring & analytics</p>
                         </div>
                     </div>
                     <div class="screenshot-card">
-                        <img src="img/app_settings.png" alt="Application Settings" class="screenshot-img">
+                        <img src="img/app_settings.png" alt="Application Settings" class="screenshot-img" loading="lazy">
                         <div class="screenshot-caption">
                             <h4 class="font-bold text-gray-900">Application Settings</h4>
                             <p class="text-sm text-gray-600">Configure LLMs & vector stores</p>
                         </div>
                     </div>
                     <div class="screenshot-card">
-                        <img src="img/departments.png" alt="Department Management" class="screenshot-img">
+                        <img src="img/departments.png" alt="Department Management" class="screenshot-img" loading="lazy">
                         <div class="screenshot-caption">
                             <h4 class="font-bold text-gray-900">Department Management</h4>
                             <p class="text-sm text-gray-600">Organize teams & access control</p>
                         </div>
                     </div>
                     <div class="screenshot-card">
-                        <img src="img/invitations.png" alt="User Invitations" class="screenshot-img">
+                        <img src="img/invitations.png" alt="User Invitations" class="screenshot-img" loading="lazy">
                         <div class="screenshot-caption">
                             <h4 class="font-bold text-gray-900">Multi-Tier Invitations</h4>
                             <p class="text-sm text-gray-600">Email-based user onboarding</p>
                         </div>
                     </div>
                     <div class="screenshot-card">
-                        <img src="img/activity_logger.png" alt="Activity Logger" class="screenshot-img">
+                        <img src="img/activity_logger.png" alt="Activity Logger" class="screenshot-img" loading="lazy">
                         <div class="screenshot-caption">
                             <h4 class="font-bold text-gray-900">Activity Logger</h4>
                             <p class="text-sm text-gray-600">Detailed audit logs</p>
                         </div>
                     </div>
                     <div class="screenshot-card">
-                        <img src="img/app_settings_details.png" alt="Settings Details" class="screenshot-img">
+                        <img src="img/app_settings_details.png" alt="Settings Details" class="screenshot-img" loading="lazy">
                         <div class="screenshot-caption">
                             <h4 class="font-bold text-gray-900">Detailed Configuration</h4>
                             <p class="text-sm text-gray-600">Fine-tune every setting</p>
@@ -716,7 +776,7 @@ npm run dev
                 <a href="https://github.com/nurudeen19/rag-fortress" target="_blank" class="btn-cta-primary">
                     Get Started on GitHub
                 </a>
-                <a href="https://rag-fortress.vercel.app/" target="_blank" class="btn-cta-secondary">
+                <a href="https://rag-fortress.nurustech.com/" target="_blank" class="btn-cta-secondary">
                     Try the Demo
                 </a>
             </div>
